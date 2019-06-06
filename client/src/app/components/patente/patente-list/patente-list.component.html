@@ -1,0 +1,21 @@
+<div class="col-md-4" *ngFor="let patente of patentes">
+  <div class="card text-center">
+    <div
+      class="card-header bg-dark text white d-flex justify-content-between align-items-center"
+    >
+      {{ patente.idPatente }}
+      <button
+        class="btn btn-danger"
+        (click)="eliminarPatente(patente.idPatente)"
+      >
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <div class="card-body">
+      <p class="font-weight-bold">Cantidad Vendida: </p><p>{{ patente.cantidadvendida }}</p>
+      <p class="font-weight-bold">Precio Inicial:</p> <p>{{ patente.precioinicial }}</p>
+
+      <a [routerLink] = "['/patentes/edit',patente.idPatente]" class="btn btn-info btn-block"> Editar</a>
+    </div>
+  </div>
+</div>

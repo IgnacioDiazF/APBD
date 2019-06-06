@@ -1,0 +1,30 @@
+<div class="col-md-4 offset-md-2">
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              name="Nombre Tipo de Invento"
+              [(ngModel)]="tipoinvento.nombretipoinvento"
+              placeholder="Inserte nombre tipo de invento"
+              class="form-control"
+              autofocus
+            />
+          </div> 
+          <button class="btn btn-success btn-block" (click)="edit ? actualizarTipoInvento() : guardarTipoInvento()">
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-4">
+    <div class="card card-body text-center">
+      <h3>{{tipoinvento.idtipoinvento == 0 ? 'ID' : tipoinvento.idtipoinvento}}</h3>
+      <p>{{tipoinvento.nombretipoinvento == '' ? 'Nombre del tipo de invento' : tipoinvento.nombretipoinvento}}</p>
+    </div>
+  </div>
+  

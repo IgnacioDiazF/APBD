@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Inicio</a>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="true"
+          >
+            Componentes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"  routerLink="/patentes">Patentes</a>
+            <a class="dropdown-item" routerLink="/tipoinventos"
+              >Tipo de Inventos</a
+            >
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/patentes/add"
+            routerLinkActive="active"
+            ><i class="fas fa-plus-circle"></i> Patente</a
+          >
+        </li>
+        <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/tipoinventos/add"
+              routerLinkActive="active"
+              ><i class="fas fa-plus-circle"></i> tipo Invento</a
+            >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

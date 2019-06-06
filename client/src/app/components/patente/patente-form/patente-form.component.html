@@ -1,0 +1,39 @@
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            name="cantidad vendida"
+            [(ngModel)]="patente.cantidadvendida"
+            placeholder="Inserte cantidad vendida"
+            class="form-control"
+            autofocus
+          />
+        </div> 
+        <div class="form-group">
+          <input
+            type="text"
+            name="precio inicial"
+            [(ngModel)]="patente.precioinicial"
+            placeholder="Inserte precio inicial"
+            class="form-control"
+          />
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? actualizarPatente() : guardarPatente()">
+          Guardar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <h3>{{patente.idPatente == 0 ? 'ID' : patente.idPatente}}</h3>
+    <p>{{patente.cantidadvendida == null ? 'Cantidad Vendida' : patente.cantidadvendida}}</p>
+    <p>{{patente.precioinicial == null ? 'Precio Inicial' : patente.precioinicial}}</p>
+  </div>
+</div>
