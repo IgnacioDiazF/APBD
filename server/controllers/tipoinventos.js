@@ -1,4 +1,4 @@
-const tipoinventos = require('../db_apis/tipoinventos.js.js');
+const tipoinventos = require('../db_apis/tipoinventos.js');
 
 function getTipoInventosFromRec(req){
     const tipoinvento = {

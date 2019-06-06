@@ -1,4 +1,4 @@
-const inventos = require('../db_apis/inventos.js.js');
+const inventos = require('../db_apis/inventos.js');
 
 function getInventosFromRec(req){
     const invento = {

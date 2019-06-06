@@ -1,5 +1,5 @@
 const oracledb = require("oracledb");
-const database = require("../services/database.js.js");
+const database = require("../services/database.js");
 const baseQuery = `select idPatente "idPatente",
     cantidadvendida "cantidadvendida",
     precioinicial "precioinicial"

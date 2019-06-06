@@ -1,4 +1,4 @@
-const patentes = require('../db_apis/patentes.js.js');
+const patentes = require('../db_apis/patentes.js');
 
 function getPatenteFromRec(req){
     const patente = {

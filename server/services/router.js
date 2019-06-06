@@ -1,8 +1,8 @@
 const express = require('express');
 const router = new express.Router();
-const patentes = require('../controllers/patentes.js.js');
-const tipoinventos = require('../controllers/tipoinventos.js.js');
-const inventos = require('../controllers/inventos.js.js');
+const patentes = require('../controllers/patentes.js');
+const tipoinventos = require('../controllers/tipoinventos.js');
+const inventos = require('../controllers/inventos.js');
 router.route('/patentes/:id?')
     .get(patentes.get)
     .post(patentes.post)

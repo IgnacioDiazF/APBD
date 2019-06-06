@@ -2,9 +2,9 @@ const http = require('http');
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const webServerConfig = require('../config/web-server.js.js');
-const database = require('./database.js.js');
-const router = require('./router.js.js');
+const webServerConfig = require('../config/web-server.js');
+const database = require('./database.js');
+const router = require('./router.js');
 let httpServer;
 
 function initialize(){
