@@ -1,3 +1,30 @@
-<p>
-  invento-list works!
-</p>
+<div class="container">
+    <a
+    class="float-right btn btn-warning"
+    routerLink="/inventos/add"
+    routerLinkActive="active"
+    ><i class="fas fa-plus-circle"></i> Invento</a>
+</div>
+  
+
+
+
+<div class="col-md-4" *ngFor="let invento of inventos">
+  <div class="card text-center">
+    <div class="card-header bg-dark text white d-flex justify-content-between align-items-center">
+      {{invento.idinvento}} - {{invento.nombreinvento}}
+      <button 
+      class="btn btn-danger" 
+      (click)="eliminarInvento(invento.idinvento)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <div class="card-body">
+      <p>ID Patente:</p>
+      <p>{{invento.idpatente}}</p>
+      <p>ID Tipo de Invento</p>
+      <p> {{invento.idtipoinvento}} </p>
+      <a [routerLink] = "['/inventos/edit', invento.idinvento]" class="btn btn-info btn-block">Editar</a>
+    </div>
+  </div>
+</div>

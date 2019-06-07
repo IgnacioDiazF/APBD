@@ -1,8 +1,17 @@
+<div class="container">
+    <a
+    class="float-right btn btn-warning"
+    routerLink="/patentes/add"
+    routerLinkActive="active"
+    ><i class="fas fa-plus-circle"></i> Patente</a>
+</div>
+  
+
+
 <div class="col-md-4" *ngFor="let patente of patentes">
   <div class="card text-center">
     <div
-      class="card-header bg-dark text white d-flex justify-content-between align-items-center"
-    >
+      class="card-header bg-dark text white d-flex justify-content-between align-items-center">
       {{ patente.idPatente }}
       <button
         class="btn btn-danger"

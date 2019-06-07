@@ -1,3 +1,52 @@
-<p>
-  invento-form works!
-</p>
+<div class="col-md-4 offset-md-2">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="id patente">ID Patente</label>
+          <input
+            type="text"
+            name="id Patente"
+            [(ngModel)]="invento.idpatente"
+            placeholder="Inserte ID patente"
+            class="form-control"
+            autofocus
+          />
+        </div> 
+        <div class="form-group">
+          <label for="id tipo invento">ID Tipo del invento</label>
+          <input
+            type="text"
+            name="id tipo invento"
+            [(ngModel)]="invento.idtipoinvento"
+            placeholder="Inserte ID tipo invento"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="nombre invento">Nombre del invento</label>  
+          <input
+            type="text"
+            name="nombre invento"
+            [(ngModel)]="invento.nombreinvento"
+            placeholder="Inserte nombre del invento"
+            class="form-control"
+          />
+        </div>
+        <button class="btn btn-success btn-block" (click)="edit ? actualizarInvento() : guardarInvento()">
+          Guardar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+    <h3>{{invento.idinvento == 0 ? 'ID del Invento' : invento.idinvento}}</h3>
+    <p>{{invento.idpatente == 0 ? 'ID de la patente' : invento.idpatente}}</p>
+    <p>{{invento.idtipoinvento == 0 ? 'ID del tipo de invento' : invento.idtipoinvento}}</p>
+    <p>{{invento.nombreinvento == '' ? 'Nombre del Invento' : invento.nombreinvento}}</p>
+  </div>
+</div>

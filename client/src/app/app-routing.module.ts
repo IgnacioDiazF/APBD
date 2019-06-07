@@ -5,6 +5,8 @@ import { PatenteFormComponent } from './components/patente/patente-form/patente-
 import { TipoinventoListComponent } from './components/tipoinvento/tipoinvento-list/tipoinvento-list.component';
 import { TipoinventoFormComponent } from './components/tipoinvento/tipoinvento-form/tipoinvento-form.component';
 import { IndexComponent } from './components/index/index.component';
+import { InventoListComponent } from './components/invento/invento-list/invento-list.component';
+import { InventoFormComponent } from './components/invento/invento-form/invento-form.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,18 @@ const routes: Routes = [
   {
     path: 'tipoinventos/edit/:id',
     component: TipoinventoFormComponent
+  },
+  {
+    path: 'inventos',
+    component: InventoListComponent
+  },
+  {
+    path: 'inventos/add',
+    component: InventoFormComponent
+  },
+  {
+    path: 'inventos/edit/:id',
+    component: InventoFormComponent
   }
 ];
 
