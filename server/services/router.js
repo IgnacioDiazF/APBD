@@ -3,6 +3,8 @@ const router = new express.Router();
 const patentes = require('../controllers/patentes.js');
 const tipoinventos = require('../controllers/tipoinventos.js');
 const inventos = require('../controllers/inventos.js');
+const rubroempresas = require('../controllers/rubroempresas.js');
+
 router.route('/patentes/:id?')
     .get(patentes.get)
     .post(patentes.post)
@@ -20,4 +22,11 @@ router.route('/inventos/:id?')
     .post(inventos.post)
     .put(inventos.put)
     .delete(inventos.delete);
+
+router.route('/rubroempresas/:id?')
+    .get(rubroempresas.get)
+    .post(rubroempresas.post)
+    .put(rubroempresas.put)
+    .delete(rubroempresas.delete);
+    
 module.exports = router;

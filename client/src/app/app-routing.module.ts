@@ -7,6 +7,8 @@ import { TipoinventoFormComponent } from './components/tipoinvento/tipoinvento-f
 import { IndexComponent } from './components/index/index.component';
 import { InventoListComponent } from './components/invento/invento-list/invento-list.component';
 import { InventoFormComponent } from './components/invento/invento-form/invento-form.component';
+import { RubroempresaListComponent } from './components/rubroempresa/rubroempresa-list/rubroempresa-list.component';
+import { RubroempresaFormComponent } from './components/rubroempresa/rubroempresa-form/rubroempresa-form.component';
 
 const routes: Routes = [
   {
@@ -48,6 +50,18 @@ const routes: Routes = [
   {
     path: 'inventos/edit/:id',
     component: InventoFormComponent
+  },
+  {
+    path: 'rubroempresas',
+    component: RubroempresaListComponent
+  },
+  {
+    path: 'rubroempresas/add',
+    component: RubroempresaFormComponent
+  },
+  {
+    path: 'rubroempresas/edit/:id',
+    component: RubroempresaFormComponent
   }
 ];
 

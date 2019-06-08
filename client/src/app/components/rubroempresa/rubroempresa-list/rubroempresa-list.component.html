@@ -1,0 +1,24 @@
+<div class="container">
+    <a
+    class="float-right btn btn-warning"
+    routerLink="/rubroempresas/add"
+    routerLinkActive="active"
+    ><i class="fas fa-plus-circle"></i> Rubro Empresa</a>
+</div>
+
+<div class="col-md-4" *ngFor="let rubroempresa of rubroempresas">
+  <div class="card text-center">
+    <div class="card-header bg-dark text white d-flex justify-content-between align-items-center">
+      {{rubroempresa.idrubroempresa}}
+      <button class="btn btn-danger"
+      (click)="eliminarRubroEmpresa(rubroempresa.idrubroempresa)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <div class="card-body">
+      <p class="font-weight-bold">Nombre:</p>
+      <p>{{rubroempresa.nombrerubroempresa}}</p>
+      <a [routerLink]="['/rubroempresas/edit', rubroempresa.idrubroempresa]" class="btn btn-info btn-block">Editar</a>
+    </div>
+  </div>
+</div>
