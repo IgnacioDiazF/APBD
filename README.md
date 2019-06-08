@@ -2,5 +2,6 @@
 
 Sistema de Gestión de patentes desarrollado en Angular+Express.js
 
-## Screenshot
+## Screenshots
 ![](docs/screenshot1.png)
+![](docs/screenshot2.png)
