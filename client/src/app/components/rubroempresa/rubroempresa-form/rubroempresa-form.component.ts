@@ -39,7 +39,7 @@ export class RubroempresaFormComponent implements OnInit {
         console.log(res);
         this.router.navigate(['/rubroempresas']);
       },
-      err => console.error(err)
+      err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
     );
     }
 
@@ -52,7 +52,7 @@ export class RubroempresaFormComponent implements OnInit {
           console.log(res);
           this.router.navigate(['/rubroempresas']);
         },
-        err => console.error(err)
+        err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
       );
     }
   }

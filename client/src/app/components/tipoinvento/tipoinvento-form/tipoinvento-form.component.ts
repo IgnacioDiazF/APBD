@@ -40,7 +40,7 @@ export class TipoinventoFormComponent implements OnInit {
         console.log(res);
         this.router.navigate(['/tipoinventos']);
       },
-      err => console.error(err)
+      err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
     );
   }
 
@@ -53,7 +53,7 @@ export class TipoinventoFormComponent implements OnInit {
         console.log(res);
         this.router.navigate(['/tipoinventos']);
       },
-      err => console.error(err)
+      err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
     );
   }
 

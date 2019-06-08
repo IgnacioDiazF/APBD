@@ -46,7 +46,9 @@ export class InventoFormComponent implements OnInit {
         console.log(res);
         this.router.navigate(['/inventos']);
       },
-      err => console.error(err)
+      err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
+        
+      
     );
   }
 
@@ -58,7 +60,7 @@ export class InventoFormComponent implements OnInit {
         console.log(res);
         this.router.navigate(['/inventos']);
       },
-      err => console.error(err)
+      err => alert(`Error: ${err.status}\nError al insertar, intente nuevamente`)
     );
   }
 
